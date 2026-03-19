@@ -315,11 +315,12 @@
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 20px 24px;
+    padding: 16px 20px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     transition: border-color 0.2s, box-shadow 0.2s;
+    overflow: hidden;
   }
 
   .highlight-card:hover {
@@ -329,10 +330,11 @@
 
   .highlight-num {
     font-family: 'Sora', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--blue);
-    min-width: 80px;
+    min-width: 70px;
+    flex-shrink: 0;
   }
 
   .highlight-desc {
@@ -666,6 +668,8 @@
     .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .skills-grid { grid-template-columns: 1fr; }
     .edu-grid { grid-template-columns: 1fr; }
+    .highlight-num { font-size: 18px; min-width: 60px; }
+    .highlight-desc { font-size: 12px; }
   }
 </style>
 </head>
